@@ -10,7 +10,7 @@ ensureMetacello
 			with: 'http://seaside.gemstone.com/ss/metacello') do: [:repositoryUrl |
 				([
 					Smalltalk at: #Gofer ifAbsent: [
-						"Current version of Gofer from which to bootstrap - as of 1.0-beta.21"
+					"Current version of Gofer from which to bootstrap - as of 1.0-beta.21"
 						self bootstrapPackage: 'Gofer-Core-lr.115' from: repositoryUrl ].
 					Smalltalk at: #Gofer ifPresent: [:goferClass | | gofer |
 						gofer := goferClass new
